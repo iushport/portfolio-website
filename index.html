@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Thapa | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9ff;
+            color: #111;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 4rem;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111;
+            font-weight: 600;
+            margin-left: 2rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #f59e0b;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6rem 4rem;
+            min-height: auto;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text h1 span {
+            color: #f59e0b; /* Highlight your last name */
+        }
+
+        .hero-text h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .hero-text .buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .hero-text .buttons a {
+            text-decoration: none;
+            padding: 0.8rem 1.8rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #f59e0b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #d97706;
+        }
+
+        .btn-secondary {
+            border: 2px solid #f59e0b;
+            color: #f59e0b;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f59e0b;
+            color: white;
+        }
+
+        .hero-image {
+            max-width: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            position:relative;
+            height: auto;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 20px;
+            transform: scale(1.5);
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 4rem 2rem;
+            }
+            .hero-image {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <h2>Ayush Thapa</h2>
+        </div>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>I'm Ayush <span>Thapa</span></h1>
+            <h2>Graphics Designer & Computer Engineering Student</h2>
+            <p>I design clean, impactful visuals and build practical digital solutions by combining creativity with technology.</p>
+            <div class="buttons">
+                <a href="#projects" class="btn-primary">View Portfolio</a>
+                <a href="assests/cv.pdf" class="btn-secondary" target="_blank">Download CV</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/me.png" alt="Ayush Thapa">
+        </div>
+    </section>
+
+</body>
+</html>
