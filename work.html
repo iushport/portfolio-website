@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Graphic Designer</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1a1a1a, #0b0b0b);
+  color: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero p {
+  margin: 15px 0 30px;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #ff4d4d, #ff784d);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 77, 77, 0.35);
+}
+
+/* SECTION */
+section {
+  padding: 80px 8%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/* PORTFOLIO */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #141414;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* ABOUT */
+.about {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+  opacity: 0.9;
+}
+
+/* CONTACT */
+.contact p {
+  text-align: center;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  section {
+    padding: 60px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div>
+    <h1>Your Name</h1>
+    <p>Graphic Designer • Visual Storyteller</p>
+    <a href="#work" class="btn">View My Work</a>
+  </div>
+</header>
+
+<!-- PORTFOLIO -->
+<section id="work">
+  <h2>Selected Works</h2>
+  <div class="grid">
+    <div class="card"><img src="design1.jpg" alt=""></div>
+    <div class="card"><img src="design2.jpg" alt=""></div>
+    <div class="card"><img src="design3.jpg" alt=""></div>
+    <div class="card"><img src="design4.jpg" alt=""></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p class="about">
+    I’m a computer engineering student and graphic designer focused on clean layouts,
+    strong typography, and visually powerful designs that communicate clearly.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Email: yourname@gmail.com</p>
+</section>
+
+<footer>
+  © 2025 Your Name — Designed by me
+</footer>
+
+</body>
+</html>
